@@ -1,0 +1,1434 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Una pequeña aventura está por comenzar. Invitación digital de Baby Shower."
+    >
+
+    <meta
+        name="theme-color"
+        content="#4A3427"
+    >
+
+    <title>Había una vez... | Baby Shower</title>
+
+    <!-- =========================================================
+         GOOGLE FONTS
+    ========================================================== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@300;400;500;600;700&family=Great+Vibes&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- =========================================================
+         FONT AWESOME
+    ========================================================== -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+    <!-- =========================================================
+         ESTILOS
+    ========================================================== -->
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+
+    <!-- =========================================================
+         PRELOADER
+    ========================================================== -->
+    <div class="preloader" id="preloader">
+
+        <div class="preloader-content">
+
+            <div class="preloader-icon">
+                <span>🧸</span>
+                <span>🍯</span>
+            </div>
+
+            <p class="preloader-title">
+                Había una vez...
+            </p>
+
+            <div class="preloader-line"></div>
+
+            <p class="preloader-text">
+                Preparando una historia muy especial
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================================================
+         PANTALLA DE BIENVENIDA
+    ========================================================== -->
+    <div class="welcome-screen" id="welcomeScreen">
+
+        <div class="welcome-background"></div>
+
+        <div class="welcome-overlay"></div>
+
+        <div class="welcome-content">
+
+            <span class="welcome-kicker">
+                UNA HISTORIA ESTÁ POR COMENZAR
+            </span>
+
+            <h1 class="welcome-title">
+                Había una vez...
+            </h1>
+
+            <p class="welcome-subtitle">
+                Una pequeña aventura está por comenzar.
+            </p>
+
+            <div class="welcome-decoration">
+                <span></span>
+                <i class="fa-solid fa-heart"></i>
+                <span></span>
+            </div>
+
+            <button
+                type="button"
+                class="btn btn-primary welcome-button"
+                id="enterInvitation"
+            >
+                <span>Entrar a la historia</span>
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+
+            <p class="welcome-note">
+                Recomendamos activar el sonido
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================================================
+         AUDIO
+    ========================================================== -->
+    <audio
+        id="backgroundMusic"
+        loop
+        preload="metadata"
+    >
+        <source
+            src="./audio/musica.mp3"
+            type="audio/mpeg"
+        >
+        Tu navegador no soporta audio HTML5.
+    </audio>
+
+
+    <!-- =========================================================
+         BOTÓN DE MÚSICA
+    ========================================================== -->
+    <button
+        type="button"
+        class="music-toggle"
+        id="musicToggle"
+        aria-label="Activar o desactivar música"
+        title="Música"
+    >
+        <i class="fa-solid fa-volume-high"></i>
+    </button>
+
+
+    <!-- =========================================================
+         HEADER / NAVEGACIÓN
+    ========================================================== -->
+    <header class="site-header" id="siteHeader">
+
+        <div class="container header-inner">
+
+            <a
+                href="#inicio"
+                class="brand"
+                aria-label="Ir al inicio"
+            >
+                <span class="brand-small">
+                    BABY SHOWER
+                </span>
+
+                <span class="brand-main">
+                    Había una vez...
+                </span>
+            </a>
+
+
+            <button
+                type="button"
+                class="menu-toggle"
+                id="menuToggle"
+                aria-label="Abrir menú"
+                aria-expanded="false"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+
+            <nav
+                class="main-nav"
+                id="mainNav"
+                aria-label="Navegación principal"
+            >
+
+                <a href="#inicio">
+                    Inicio
+                </a>
+
+                <a href="#historia">
+                    Historia
+                </a>
+
+                <a href="#bebe">
+                    El bebé
+                </a>
+
+                <a href="#gran-dia">
+                    El gran día
+                </a>
+
+                <a href="#familia">
+                    Familia
+                </a>
+
+                <a href="#galeria">
+                    Galería
+                </a>
+
+                <a href="#juego">
+                    Juego
+                </a>
+
+                <a href="#confirmar">
+                    Confirmar
+                </a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <!-- =====================================================
+             HERO / PORTADA
+        ====================================================== -->
+        <section
+            class="hero"
+            id="inicio"
+        >
+
+            <div class="hero-background"></div>
+
+            <div class="hero-overlay"></div>
+
+            <div class="hero-decor hero-decor-left">
+                <span>✦</span>
+                <span>·</span>
+                <span>✦</span>
+            </div>
+
+            <div class="hero-decor hero-decor-right">
+                <span>✦</span>
+                <span>·</span>
+                <span>✦</span>
+            </div>
+
+
+            <div class="container hero-content">
+
+                <span class="eyebrow reveal">
+                    UNA NUEVA AVENTURA
+                </span>
+
+                <h1 class="hero-title reveal">
+                    Había una vez...
+                </h1>
+
+                <p class="hero-subtitle reveal">
+                    Una pequeña aventura está por comenzar.
+                </p>
+
+                <div class="hero-divider reveal">
+                    <span></span>
+                    <i class="fa-solid fa-heart"></i>
+                    <span></span>
+                </div>
+
+                <p class="hero-description reveal">
+                    Y queremos compartir contigo el comienzo
+                    de esta historia llena de amor, ternura
+                    y momentos inolvidables.
+                </p>
+
+                <a
+                    href="#historia"
+                    class="btn btn-outline reveal"
+                >
+                    <span>Descubrir la historia</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </a>
+
+            </div>
+
+
+            <div class="hero-bottom">
+                <span>
+                    DESLIZA PARA CONTINUAR
+                </span>
+
+                <i class="fa-solid fa-chevron-down"></i>
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             INTRODUCCIÓN
+        ====================================================== -->
+        <section class="chapter-intro section-light">
+
+            <div class="container narrow-container">
+
+                <div class="chapter-number reveal">
+                    CAPÍTULO I
+                </div>
+
+                <h2 class="section-title reveal">
+                    Una historia<br>
+                    comienza con amor
+                </h2>
+
+                <div class="section-ornament reveal">
+                    <span></span>
+                    <i class="fa-solid fa-star"></i>
+                    <span></span>
+                </div>
+
+                <p class="section-lead reveal">
+                    Hay historias que empiezan con una mirada,
+                    otras con un sueño... y algunas comienzan
+                    con la llegada de un pequeño milagro.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             HISTORIA
+        ====================================================== -->
+        <section
+            class="story-section section-paper"
+            id="historia"
+        >
+
+            <div class="container story-grid">
+
+                <div class="story-image reveal">
+
+                    <div class="image-frame">
+
+                        <img
+                            src="./images/mama.jpg"
+                            alt="Mamá esperando la llegada del bebé"
+                            loading="lazy"
+                            draggable="false"
+                        >
+
+                        <div class="image-caption">
+                            <span>
+                                El comienzo de nuestro cuento
+                            </span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="story-content">
+
+                    <span class="eyebrow reveal">
+                        NUESTRA HISTORIA
+                    </span>
+
+                    <h2 class="section-title text-left reveal">
+                        Y entonces,
+                        <em>el amor</em>
+                        creció...
+                    </h2>
+
+                    <div class="story-text reveal">
+
+                        <p>
+                            Durante mucho tiempo soñamos con
+                            conocer a alguien muy especial.
+                        </p>
+
+                        <p>
+                            Hoy ese sueño comienza a tomar forma
+                            y nuestros corazones se preparan para
+                            recibir al pequeño protagonista de
+                            nuestra historia.
+                        </p>
+
+                        <p>
+                            Cada patadita, cada ilusión y cada
+                            pequeño detalle nos recuerda que
+                            pronto tendremos entre nuestros brazos
+                            el regalo más hermoso.
+                        </p>
+
+                    </div>
+
+                    <div class="signature reveal">
+                        Con todo nuestro amor
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             EL BEBÉ
+        ====================================================== -->
+        <section
+            class="baby-section section-cream"
+            id="bebe"
+        >
+
+            <div class="container">
+
+                <div class="chapter-heading centered reveal">
+
+                    <span class="chapter-number">
+                        CAPÍTULO II
+                    </span>
+
+                    <span class="eyebrow">
+                        EL PEQUEÑO PROTAGONISTA
+                    </span>
+
+                    <h2 class="section-title">
+                        Alguien muy especial<br>
+                        está por llegar
+                    </h2>
+
+                    <div class="section-ornament">
+                        <span></span>
+                        <i class="fa-solid fa-heart"></i>
+                        <span></span>
+                    </div>
+
+                </div>
+
+
+                <div class="baby-feature">
+
+                    <div class="baby-image reveal">
+
+                        <div class="organic-frame">
+
+                            <img
+                                src="./images/bebe.jpg"
+                                alt="Ilustración del bebé"
+                                loading="lazy"
+                                draggable="false"
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="baby-copy reveal">
+
+                        <span class="small-label">
+                            UNA NUEVA VIDA
+                        </span>
+
+                        <h3>
+                            El amor más pequeño
+                            puede llenar el corazón
+                            más grande.
+                        </h3>
+
+                        <p>
+                            Cada día esperamos con ilusión
+                            el momento de conocer esa pequeña
+                            carita, esas pequeñas manos y
+                            descubrir todo lo que esta nueva
+                            aventura tiene preparado para nosotros.
+                        </p>
+
+                        <div class="baby-symbol">
+                            <span>🧸</span>
+                            <span>♡</span>
+                            <span>🍯</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             CUENTA REGRESIVA
+        ====================================================== -->
+        <section class="countdown-section">
+
+            <div class="countdown-background"></div>
+
+            <div class="countdown-overlay"></div>
+
+            <div class="container countdown-content">
+
+                <span class="eyebrow reveal">
+                    CADA VEZ FALTA MENOS
+                </span>
+
+                <h2 class="section-title reveal">
+                    La cuenta regresiva
+                    ha comenzado
+                </h2>
+
+                <p class="countdown-text reveal">
+                    Hasta nuestro gran día
+                </p>
+
+
+                <div
+                    class="countdown-grid reveal"
+                    id="countdown"
+                    aria-label="Cuenta regresiva"
+                >
+
+                    <div class="countdown-item">
+                        <span
+                            class="countdown-number"
+                            id="days"
+                        >
+                            00
+                        </span>
+
+                        <span class="countdown-label">
+                            Días
+                        </span>
+                    </div>
+
+
+                    <div class="countdown-item">
+                        <span
+                            class="countdown-number"
+                            id="hours"
+                        >
+                            00
+                        </span>
+
+                        <span class="countdown-label">
+                            Horas
+                        </span>
+                    </div>
+
+
+                    <div class="countdown-item">
+                        <span
+                            class="countdown-number"
+                            id="minutes"
+                        >
+                            00
+                        </span>
+
+                        <span class="countdown-label">
+                            Minutos
+                        </span>
+                    </div>
+
+
+                    <div class="countdown-item">
+                        <span
+                            class="countdown-number"
+                            id="seconds"
+                        >
+                            00
+                        </span>
+
+                        <span class="countdown-label">
+                            Segundos
+                        </span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             GRAN DÍA
+        ====================================================== -->
+        <section
+            class="event-section section-paper"
+            id="gran-dia"
+        >
+
+            <div class="container">
+
+                <div class="chapter-heading centered reveal">
+
+                    <span class="chapter-number">
+                        CAPÍTULO III
+                    </span>
+
+                    <span class="eyebrow">
+                        GUARDA ESTA FECHA
+                    </span>
+
+                    <h2 class="section-title">
+                        El gran día
+                    </h2>
+
+                    <div class="section-ornament">
+                        <span></span>
+                        <i class="fa-solid fa-calendar-heart"></i>
+                        <span></span>
+                    </div>
+
+                </div>
+
+
+                <!-- TICKET -->
+                <div class="event-ticket reveal">
+
+                    <div class="ticket-main">
+
+                        <div class="ticket-label">
+                            BABY SHOWER
+                        </div>
+
+                        <h3>
+                            Una tarde<br>
+                            para recordar
+                        </h3>
+
+                        <div class="ticket-date">
+                            <span class="day">
+                                12
+                            </span>
+
+                            <span class="month">
+                                DICIEMBRE
+                            </span>
+
+                            <span class="year">
+                                2026
+                            </span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="ticket-info">
+
+                        <div class="event-detail">
+
+                            <div class="event-icon">
+                                <i class="fa-regular fa-clock"></i>
+                            </div>
+
+                            <div>
+                                <span>
+                                    HORA
+                                </span>
+
+                                <strong>
+                                    4:00 PM
+                                </strong>
+                            </div>
+
+                        </div>
+
+
+                        <div class="event-detail">
+
+                            <div class="event-icon">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+
+                            <div>
+                                <span>
+                                    LUGAR
+                                </span>
+
+                                <strong>
+                                    Jardín de los Sueños
+                                </strong>
+
+                                <small>
+                                    Monterrey, Nuevo León
+                                </small>
+                            </div>
+
+                        </div>
+
+
+                        <div class="event-detail">
+
+                            <div class="event-icon">
+                                <i class="fa-solid fa-map"></i>
+                            </div>
+
+                            <div class="event-links">
+
+                                <a
+                                    href="https://www.google.com/maps/search/?api=1&query=Jard%C3%ADn+de+los+Sue%C3%B1os+Monterrey+Nuevo+Le%C3%B3n"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    <i class="fa-brands fa-google"></i>
+                                    Google Maps
+                                </a>
+
+                                <a
+                                    href="https://waze.com/ul?q=Jard%C3%ADn%20de%20los%20Sue%C3%B1os%20Monterrey%20Nuevo%20Le%C3%B3n"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    <i class="fa-solid fa-location-arrow"></i>
+                                    Waze
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="event-note reveal">
+
+                    <i class="fa-solid fa-heart"></i>
+
+                    <p>
+                        Tu presencia hará que este capítulo
+                        sea todavía más especial.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             FAMILIA
+        ====================================================== -->
+        <section
+            class="family-section section-cream"
+            id="familia"
+        >
+
+            <div class="container">
+
+                <div class="chapter-heading centered reveal">
+
+                    <span class="chapter-number">
+                        CAPÍTULO IV
+                    </span>
+
+                    <span class="eyebrow">
+                        LOS PERSONAJES DE ESTA HISTORIA
+                    </span>
+
+                    <h2 class="section-title">
+                        Con amor,
+                        nuestra familia
+                    </h2>
+
+                    <div class="section-ornament">
+                        <span></span>
+                        <i class="fa-solid fa-heart"></i>
+                        <span></span>
+                    </div>
+
+                </div>
+
+
+                <div class="family-grid">
+
+                    <!-- MAMÁ -->
+                    <article class="family-card reveal">
+
+                        <div class="family-image">
+
+                            <img
+                                src="./images/mama.jpg"
+                                alt="Mamá"
+                                loading="lazy"
+                                draggable="false"
+                            >
+
+                        </div>
+
+                        <div class="family-info">
+
+                            <span>
+                                MAMÁ
+                            </span>
+
+                            <h3>
+                                [Nombre de mamá]
+                            </h3>
+
+                            <p>
+                                Esperando con todo su corazón
+                                la llegada de su pequeño milagro.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- PAPÁ -->
+                    <article class="family-card reveal">
+
+                        <div class="family-image">
+
+                            <img
+                                src="./images/papa.jpg"
+                                alt="Papá"
+                                loading="lazy"
+                                draggable="false"
+                            >
+
+                        </div>
+
+                        <div class="family-info">
+
+                            <span>
+                                PAPÁ
+                            </span>
+
+                            <h3>
+                                [Nombre de papá]
+                            </h3>
+
+                            <p>
+                                Preparándose para vivir
+                                la aventura más bonita de su vida.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             GALERÍA
+        ====================================================== -->
+        <section
+            class="gallery-section section-dark"
+            id="galeria"
+        >
+
+            <div class="container">
+
+                <div class="chapter-heading centered reveal">
+
+                    <span class="chapter-number">
+                        CAPÍTULO V
+                    </span>
+
+                    <span class="eyebrow">
+                        MOMENTOS
+                    </span>
+
+                    <h2 class="section-title">
+                        Un pequeño álbum
+                    </h2>
+
+                    <div class="section-ornament">
+                        <span></span>
+                        <i class="fa-solid fa-camera"></i>
+                        <span></span>
+                    </div>
+
+                    <p class="section-lead">
+                        Algunas imágenes de esta historia
+                        que apenas comienza.
+                    </p>
+
+                </div>
+
+
+                <div class="gallery-grid">
+
+                    <button
+                        type="button"
+                        class="gallery-item gallery-item-large reveal"
+                        data-image="./images/galeria1.jpg"
+                        aria-label="Abrir fotografía 1"
+                    >
+
+                        <img
+                            src="./images/galeria1.jpg"
+                            alt="Momento familiar"
+                            loading="lazy"
+                            draggable="false"
+                        >
+
+                        <span class="gallery-overlay">
+                            <i class="fa-solid fa-expand"></i>
+                        </span>
+
+                    </button>
+
+
+                    <button
+                        type="button"
+                        class="gallery-item reveal"
+                        data-image="./images/galeria2.jpg"
+                        aria-label="Abrir fotografía 2"
+                    >
+
+                        <img
+                            src="./images/galeria2.jpg"
+                            alt="Momento especial"
+                            loading="lazy"
+                            draggable="false"
+                        >
+
+                        <span class="gallery-overlay">
+                            <i class="fa-solid fa-expand"></i>
+                        </span>
+
+                    </button>
+
+
+                    <button
+                        type="button"
+                        class="gallery-item reveal"
+                        data-image="./images/galeria3.jpg"
+                        aria-label="Abrir fotografía 3"
+                    >
+
+                        <img
+                            src="./images/galeria3.jpg"
+                            alt="Momento familiar"
+                            loading="lazy"
+                            draggable="false"
+                        >
+
+                        <span class="gallery-overlay">
+                            <i class="fa-solid fa-expand"></i>
+                        </span>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             JUEGO
+        ====================================================== -->
+        <section
+            class="game-section section-paper"
+            id="juego"
+        >
+
+            <div class="container">
+
+                <div class="chapter-heading centered reveal">
+
+                    <span class="chapter-number">
+                        CAPÍTULO VI
+                    </span>
+
+                    <span class="eyebrow">
+                        UNA PEQUEÑA MISIÓN
+                    </span>
+
+                    <h2 class="section-title">
+                        Ayuda a encontrar
+                        la miel
+                    </h2>
+
+                    <div class="section-ornament">
+                        <span></span>
+                        <i class="fa-solid fa-gamepad"></i>
+                        <span></span>
+                    </div>
+
+                    <p class="section-lead">
+                        Hay algunos frascos escondidos...
+                        pero cuidado con las abejitas.
+                    </p>
+
+                </div>
+
+
+                <div class="game-wrapper reveal">
+
+                    <div class="game-top">
+
+                        <div class="game-stat">
+
+                            <span>
+                                TIEMPO
+                            </span>
+
+                            <strong id="gameTimer">
+                                25
+                            </strong>
+
+                        </div>
+
+
+                        <div class="game-stat">
+
+                            <span>
+                                MIEL
+                            </span>
+
+                            <strong>
+                                <span id="honeyFound">
+                                    0
+                                </span>
+                                /
+                                <span id="honeyTotal">
+                                    5
+                                </span>
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+                    <div
+                        class="game-area"
+                        id="gameArea"
+                        aria-label="Área del juego"
+                    >
+
+                        <div class="game-background-decoration">
+                            <span>🌿</span>
+                            <span>🌼</span>
+                            <span>🌿</span>
+                        </div>
+
+                    </div>
+
+
+                    <div
+                        class="game-message"
+                        id="gameMessage"
+                        aria-live="polite"
+                    >
+                        Encuentra los 5 frascos de miel
+                        antes de que se termine el tiempo.
+                    </div>
+
+
+                    <button
+                        type="button"
+                        class="btn btn-primary game-start"
+                        id="startGame"
+                    >
+                        <i class="fa-solid fa-play"></i>
+                        <span>Comenzar misión</span>
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             CARTA SECRETA
+        ====================================================== -->
+        <section class="letter-section section-cream">
+
+            <div class="container narrow-container">
+
+                <div class="letter-wrapper reveal">
+
+                    <div class="letter-top">
+
+                        <span>
+                            UNA CARTA ESPECIAL
+                        </span>
+
+                        <i class="fa-solid fa-envelope"></i>
+
+                    </div>
+
+
+                    <div class="letter-content">
+
+                        <span class="letter-label">
+                            PARA QUIENES NOS ACOMPAÑAN
+                        </span>
+
+                        <h2>
+                            Una pequeña
+                            sorpresa...
+                        </h2>
+
+                        <p>
+                            Hay palabras que merecen guardarse
+                            como un pequeño secreto.
+                        </p>
+
+
+                        <button
+                            type="button"
+                            class="btn btn-outline dark"
+                            id="openLetter"
+                        >
+                            <i class="fa-solid fa-envelope-open"></i>
+                            Abrir carta
+                        </button>
+
+
+                        <div
+                            class="secret-letter"
+                            id="secretLetter"
+                            hidden
+                        >
+
+                            <div class="secret-letter-inner">
+
+                                <p class="letter-greeting">
+                                    Querida familia y amigos:
+                                </p>
+
+                                <p>
+                                    Gracias por acompañarnos en
+                                    uno de los capítulos más
+                                    importantes de nuestra vida.
+                                </p>
+
+                                <p>
+                                    Muy pronto conoceremos a ese
+                                    pequeño ser que ya ocupa un
+                                    lugar enorme en nuestros
+                                    corazones.
+                                </p>
+
+                                <p>
+                                    Gracias por formar parte de
+                                    esta historia.
+                                </p>
+
+                                <p class="letter-signature">
+                                    Con mucho amor ♡
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             REGALOS
+        ====================================================== -->
+        <section class="gifts-section section-paper">
+
+            <div class="container narrow-container">
+
+                <div class="simple-content centered reveal">
+
+                    <span class="eyebrow">
+                        UN DETALLE CON AMOR
+                    </span>
+
+                    <h2 class="section-title">
+                        Tu presencia
+                        es el mejor regalo
+                    </h2>
+
+                    <div class="section-ornament">
+                        <span></span>
+                        <i class="fa-solid fa-gift"></i>
+                        <span></span>
+                    </div>
+
+                    <p class="section-lead">
+                        Lo más importante para nosotros es
+                        compartir este momento contigo.
+                        Si deseas tener un detalle con el bebé,
+                        cualquier muestra de cariño será
+                        recibida con muchísimo amor.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             RSVP
+        ====================================================== -->
+        <section
+            class="rsvp-section"
+            id="confirmar"
+        >
+
+            <div class="rsvp-background"></div>
+
+            <div class="rsvp-overlay"></div>
+
+            <div class="container narrow-container">
+
+                <div class="rsvp-content reveal">
+
+                    <span class="eyebrow">
+                        CAPÍTULO VII
+                    </span>
+
+                    <h2 class="section-title">
+                        ¿Nos acompañas?
+                    </h2>
+
+                    <div class="section-ornament">
+                        <span></span>
+                        <i class="fa-solid fa-heart"></i>
+                        <span></span>
+                    </div>
+
+                    <p>
+                        Nos encantaría contar contigo en
+                        este día tan especial.
+                    </p>
+
+                    <p>
+                        Por favor confirma tu asistencia
+                        antes del <strong>30 de noviembre de 2026</strong>.
+                    </p>
+
+
+                    <a
+                        href="https://wa.me/528445550198?text=Hola%20%F0%9F%8C%BF%20Quiero%20confirmar%20mi%20asistencia%20al%20Baby%20Shower."
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="btn btn-light"
+                        id="whatsappButton"
+                    >
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <span>Confirmar por WhatsApp</span>
+                    </a>
+
+
+                    <span class="rsvp-note">
+                        ¡Será un gusto compartir contigo!
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             EPÍLOGO
+        ====================================================== -->
+        <section class="ending-section">
+
+            <div class="ending-background"></div>
+
+            <div class="ending-overlay"></div>
+
+            <div class="container narrow-container">
+
+                <div class="ending-content reveal">
+
+                    <span class="ending-small">
+                        Y COLORÍN COLORADO...
+                    </span>
+
+                    <h2>
+                        Esta historia
+                        apenas comienza.
+                    </h2>
+
+                    <div class="ending-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <p>
+                        Gracias por ser parte del comienzo
+                        de nuestra nueva aventura.
+                    </p>
+
+                    <span class="ending-signature">
+                        Con amor
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================================================
+         FOOTER
+    ========================================================== -->
+    <footer class="site-footer">
+
+        <div class="container footer-inner">
+
+            <div class="footer-brand">
+                Había una vez...
+            </div>
+
+            <p>
+                Una historia hecha con amor.
+            </p>
+
+            <span class="footer-heart">
+                ♥
+            </span>
+
+        </div>
+
+    </footer>
+
+
+    <!-- =========================================================
+         LIGHTBOX
+    ========================================================== -->
+    <div
+        class="lightbox"
+        id="lightbox"
+        aria-hidden="true"
+    >
+
+        <button
+            type="button"
+            class="lightbox-close"
+            id="lightboxClose"
+            aria-label="Cerrar imagen"
+        >
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+
+        <button
+            type="button"
+            class="lightbox-prev"
+            id="lightboxPrev"
+            aria-label="Imagen anterior"
+        >
+            <i class="fa-solid fa-chevron-left"></i>
+        </button>
+
+
+        <div class="lightbox-content">
+
+            <img
+                src=""
+                alt="Imagen ampliada"
+                id="lightboxImage"
+                draggable="false"
+            >
+
+        </div>
+
+
+        <button
+            type="button"
+            class="lightbox-next"
+            id="lightboxNext"
+            aria-label="Imagen siguiente"
+        >
+            <i class="fa-solid fa-chevron-right"></i>
+        </button>
+
+    </div>
+
+
+    <!-- =========================================================
+         BOTÓN VOLVER ARRIBA
+    ========================================================== -->
+    <button
+        type="button"
+        class="back-to-top"
+        id="backToTop"
+        aria-label="Volver arriba"
+        title="Volver arriba"
+    >
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+
+    <!-- =========================================================
+         JAVASCRIPT
+    ========================================================== -->
+    <script src="./script.js"></script>
+
+</body>
+</html>
